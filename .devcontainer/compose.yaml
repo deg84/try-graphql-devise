@@ -1,13 +1,13 @@
-name: "backend"
+name: "try-graphql-devise"
 
 services:
-  rails-app:
+  backend:
     build:
       context: ..
-      dockerfile: .devcontainer/Dockerfile
+      dockerfile: .devcontainer/backend/Dockerfile
 
     volumes:
-    - ../..:/workspaces:cached
+      - ../..:/workspaces:cached
 
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
@@ -17,5 +17,3 @@ services:
 
     # Use "forwardPorts" in **devcontainer.json** to forward an app port locally.
     # (Adding the "ports" property to this file will not forward from a Codespace.)
-
-  
