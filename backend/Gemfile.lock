@@ -107,6 +107,11 @@ GEM
     graphql (2.3.14)
       base64
       fiber-storage
+    graphql_devise (1.5.0)
+      devise_token_auth (>= 0.1.43, < 2.0)
+      graphql (>= 1.8, < 2.4)
+      rails (>= 4.2, < 7.2)
+      zeitwerk
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
@@ -285,6 +290,7 @@ DEPENDENCIES
   devise
   devise_token_auth
   graphql
+  graphql_devise
   puma (>= 5.0)
   rails (~> 7.1.4)
   rubocop-rails-omakase
