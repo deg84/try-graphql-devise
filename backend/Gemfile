@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+gem "devise_token_auth"
+gem "devise"
 gem "graphql"
 gem "puma", ">= 5.0"
 gem "rails", "~> 7.1.4"
