@@ -28,6 +28,6 @@ module Types
       "Hello World!"
     end
 
-    field :post, resolver: Resolvers::PostResolver
+    field :post, resolver: Resolvers::PostResolver, authenticate: true
   end
 end
